@@ -10,9 +10,16 @@ emd5, JSON list of "job" and "company" key/value pairs for Cogo, JSON list of "j
 
 ### For the output: 
 •	Line 1: Total runtime of your script up to the time of output
+
 •	Line 2: The number of users within both datasets
+
 •	Line 3: The number of users unique to Cogo's dataset
+
 •	Line 4: The number of users unique to Livework's dataset
+
 •	Line 5: For users within both datasets, the % of users with different job titles between them
+
 •	Lines 6 - 15: A 10 line sample of your CSV output
+
 •	Remaining lines: The CREATE TABLE statement for the table that could house the CSV output.
+
