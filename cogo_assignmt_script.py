@@ -16,7 +16,7 @@ def db_connection():
     db_con = pymysql.Connect(host='data-engineer-rds.czmkgxqloose.us-east-1.rds.amazonaws.com',
                              port=3306,
                              user='cogo_read_only',
-                             passwd='N&f#vSq9',
+                             passwd='',
                              db='liveworks')
     return db_con
 
