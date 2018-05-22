@@ -1,0 +1,22 @@
+1. run the script
+To run the script, you need to have virtualenv pre-installed in your computer. if not please install it with command `pip install virtualenv`
+
+# change the work directory to the directory of the script
+cd /dir/cogo_submittion
+
+# create a test virtual environment
+mkdir test_env
+virtualenv test_env
+
+# activate the test virtual environment
+source test_env/bin/activate
+
+# install all the required dependencies in the `requirement.txt`
+pip install -r requirement.txt
+
+2. run the test
+# run the script and redirect the output into results_new.text
+python cogo_assignmt_script.py > results_new.txt
+
+3. others
+The script is for interacting with two datasets in mysql table and API, and doing comparisons between these two datasets. The data in API was read one by one page. Multiprocessing was applied for speeding up the processes of reading data from API and querying intersections between two datasets.  The total processing time of 81.5 sec in the results.txt is for running this script with 4 cpu cores. It can be faster with more cpu cores. The file named results.csv contains the data for the users within the intersections.

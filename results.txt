@@ -1,0 +1,23 @@
+Total runtime is 81.522824 sec
+The number of users within both dataset:  301031
+The number of users unique to Cogo's dataset:  335372
+The number of users unique to Livework's dataset:  336119
+In the both datasets, the 70.67% of users with different job titles. 
+               emd5                                        Cogo                                                            Liveworks
+cd0119e7748e9dacce4ea7a9b5fac8ab, {'job': u'Dietitian', 'company': u'Patel LLC'},                                 {'job': 'Therapist, sports', 'company': 'Mcdonald-Walker'}
+cd0178d71702d62f396e0e9f8c3e945d, {'job': u'Graphic designer', 'company': u'Young, Harrison and Smith'},          {'job': 'Runner, broadcasting/film/video', 'company': 'Barber, Fleming and Thomas'}
+cd01b2cf9066e33446a1d9573542ad6e, {'job': u'Neurosurgeon', 'company': u'Moss-Scott'},                             {'job': 'Conference centre manager', 'company': 'Watkins-Cisneros'}
+cd01b51cca8e7de975f7dfdc8bca30dc, {'job': u'Database administrator', 'company': u'Thompson-West'},                {'job': 'Accommodation manager', 'company': 'Golden, Fitzgerald and Walton'}
+cd021f58b249d226e5fab121eecb7a8d, {'job': u'Nature conservation officer', 'company': u'Yang, Chaney and Morales'}, {'job': 'Mechanical engineer', 'company': 'Fernandez-Cooper'}
+cd02208351da4cecffe1fa5583fca8b4, {'job': u'Engineer, production', 'company': u'Moore, Wade and Barnes'},         {'job': 'Sales executive', 'company': 'Parker Group'}
+cd026d8fc458add3517fd7c738d038eb, {'job': u'Journalist, magazine', 'company': u'Shaffer, Holmes and Tucker'},     {'job': 'Film/video editor', 'company': 'Hill-Hall'}
+cd0283f4ac20c97fd606088c300043aa, {'job': u'Retail buyer', 'company': u'Walker-Rogers'},                          {'job': 'Librarian, academic', 'company': 'Simpson and Sons'}
+cd0289cef2421f379ba36e2e4d9e8c3d, {'job': u'Medical illustrator', 'company': u'Arellano, Peters and Walker'},     {'job': 'Engineer, civil (contracting)', 'company': 'Torres, Cox and Schmidt'}
+
+            CREATE TABLE IF NOT EXISTS `cogo_table` (
+            `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+            `emd5` varchar(32) NOT NULL,
+            `Cogo` JSON NOT NULL,
+            `Liveworks` JSON NOT NULL
+            );
+    
